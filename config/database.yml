@@ -1,0 +1,35 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: rails_devise_development
+  pool:     5
+  username: postgres
+  password: postgres
+  template: template0
+  
+test:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: rails_devise_test
+  pool:     5
+  username: postgres
+  password: postgres
+  template: template0
+
+production:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: rails_devise_production
+  pool:     5
+  username: postgres
+  password: postgres
+  template: template0
